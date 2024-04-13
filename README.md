@@ -12,7 +12,7 @@ Esta lista consiste em uma série de exercícios práticos que visam aprimorar a
 1. **Página de Introdução:**
    - **Tag HTML:** `<h1>`
    - **Propriedade CSS:** `background-image`
-   ![Página de Introdução](img\1.png)
+   ![Página de Introdução](img/1.png)
 
 2. **Página de Perfil:**
    - **Tag HTML:** `<img>`

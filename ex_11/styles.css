@@ -1,0 +1,22 @@
+body {
+    font-family: Arial;
+    background-color: #313131; 
+    color: #f5f5f5;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #ff6347; 
+}
+ul {
+    list-style-type: none;
+}
+ul ul {
+    text-indent: 20px;
+    
+}
+li {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #f5f5f5;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv_15</title>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+
+
+        <div class="container">
+            <h1>Lançamento do Novo Produto!</h1>
+            <img class="img" src="2.png" alt="Produto">
+            <div class="contagem">
+                <p>O produto será lançado em:</p>
+            <time id="contagem" datetime="2024-04-30">00:00:00</time>
+        </div>
+
+
+
+
+        <div class="container_2 ">
+            <ul class="lista">
+                <li>1 mês de aulas</li>
+                <li>10 gb de arquivos exclusivos</li>
+                <li>Aulas online</li>
+            </ul>
+
+        
+
+            <form class="form" action="#" method="post">
+                <input type="email" name="email" placeholder="Digite seu e-mail para pré-encomendar" required>
+                <input type="submit" value="Pré-encomendar agora">
+            </form>
+        </div>
+
+        <script>
+            // Função para atualizar a contagem regressiva
+            function updateCountdown() {
+                const deadline = new Date("2024-04-30");
+                const currentTime = new Date();
+                const difference = deadline - currentTime;
+    
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    
+                document.getElementById("contagem").textContent = `${days.toString().padStart(2, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    
+                // Atualiza a cada segundo
+                setTimeout(updateCountdown, 1000);
+            }
+    
+            // Inicia a contagem regressiva ao carregar a página
+            updateCountdown();
+        </script>
+    </body>
+</html>

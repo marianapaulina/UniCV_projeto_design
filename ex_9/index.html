@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Tarefas</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+
+  input[type="checkbox"] {
+    display: none; 
+  }
+
+  .checkbox-custom {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+
+
+  input[type="checkbox"]:checked + label:before {
+    content: "✓"; 
+    text-decoration: line-through;
+  }
+
+
+  label {
+    cursor: pointer;
+    font-size: 16px;
+    vertical-align: middle;
+  }
+
+
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>Lista de Tarefas</h1>
+
+
+<div id="task-list">
+  <div>
+    <input type="checkbox" id="task1">
+    <label for="task1" class="checkbox-custom"></label>
+    <label for="task1">Tarefa 1</label>
+  </div>
+  <div>
+    <input type="checkbox" id="task2">
+    <label for="task2" class="checkbox-custom"></label>
+    <label for="task2">Tarefa 2</label>
+  </div>
+  <div>
+    <input type="checkbox" id="task3">
+    <label for="task3" class="checkbox-custom"></label>
+    <label for="task3">Tarefa 3</label>
+  </div>
+</div>
+
+
+<div>
+  <button onclick="addTask()">Adicionar Tarefa</button>
+  <button onclick="editTask()">Editar Tarefa</button>
+  <button onclick="deleteTask()">Excluir Tarefa</button>
+</div>
+
+<script>
+
+  function addTask() {
+    var taskList = document.getElementById("task-list");
+    var newTask = document.createElement("div");
+    var taskId = "task" + (taskList.children.length + 1);
+    newTask.innerHTML = `
+      <input type="checkbox" id="${taskId}">
+      <label for="${taskId}" class="checkbox-custom"></label>
+      <label for="${taskId}">Nova Tarefa</label>
+    `;
+    taskList.appendChild(newTask);
+  }
+
+  function editTask() {
+    var taskList = document.getElementById("task-list");
+    var lastTask = taskList.lastElementChild;
+    if (lastTask) {
+      lastTask.querySelector("label:last-of-type").textContent = "Tarefa Editada";
+    }
+  }
+
+  function deleteTask() {
+    var taskList = document.getElementById("task-list");
+    var lastTask = taskList.lastElementChild;
+    if (lastTask) {
+      taskList.removeChild(lastTask);
+    }
+  }
+</script>
+
+</body>
+</html>

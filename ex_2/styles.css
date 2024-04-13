@@ -1,0 +1,37 @@
+
+body{
+    background-color: rgb(29, 28, 28);
+}
+
+.perfil h2{
+    color: #e4dada;
+}
+
+.perfil p{
+    color: #e4dada;
+}
+
+.perfil {
+    text-align: center;
+}
+
+.perfil_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    margin-bottom: 20px; 
+}
+
+.redes a {
+    display: inline-block; 
+    margin: 0 10px; 
+    color: #e4dada; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+
+.redes a:hover {
+    background-color: #333;
+    color: #fff; 
+}
+

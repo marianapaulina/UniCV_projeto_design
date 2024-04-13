@@ -1,0 +1,49 @@
+body {
+    background-color: #2b492f;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 1;
+
+}
+
+.promos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.promo {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #1b3321;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.promo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.desconto {
+    color: red;
+}
+
+button {
+    background-color: rgb(105, 173, 49);
+    font-size: large;
+    font-family: sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button a {
+    color: #333;
+}
+

@@ -1,0 +1,36 @@
+
+body{
+    background-color: black;
+    
+}
+
+h1{
+    font-family: Arial;
+    color: aliceblue;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #fffefe;
+}
+
+
+
+.gallery {
+    display: flex;
+    justify-content: center; 
+}
+
+
+figure {
+    text-align: center;
+}
+
+
+figure img {
+    display: block;
+    width: 290px; 
+}
+
+

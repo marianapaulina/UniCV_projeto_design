@@ -52,7 +52,7 @@ Esta lista consiste em uma série de exercícios práticos que visam aprimorar a
 9. **Página de Lista de Tarefas:**
    - **Tag HTML:** `<input>`
    - **Propriedade CSS:** `text-decoration`
-   ![Página de Lista de Tarefas](img/9.png)
+   ![Página de Lista de Tarefas](img/9_.png)
 
 10. **Página de Testemunhos:**
     - **Tag HTML:** `<blockquote>`

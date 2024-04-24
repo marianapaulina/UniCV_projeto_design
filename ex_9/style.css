@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(46, 41, 41);
+    margin: 0;
+    padding: 30px;
+  }
+  .tasks {
+    list-style-type: none;
+    padding: 0;
+  }
+  .task {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  .task input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: red;
+  }
+  h1 {
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+  }
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
